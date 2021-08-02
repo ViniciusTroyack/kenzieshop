@@ -13,7 +13,8 @@ const Product = ({ isRemovable = false, product }) => {
   return (
     <div className='card'>
       <div className='divImg'>
-        <img url={image} />
+        <img url={image} alt='' />
+
       </div>
       <p>{name}</p>
       <p>{price}</p>
