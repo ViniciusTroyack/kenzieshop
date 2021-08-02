@@ -1,5 +1,5 @@
 import { ADD_CART, SUB_CART } from "./actionType"
-const defaultState = JSON.parse(localStorage.getItem('cart') || [])
+const defaultState = JSON.parse(localStorage.getItem('cart')) || [];
 
 const cartReducer = (state = defaultState, action) => {
 
