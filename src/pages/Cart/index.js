@@ -9,7 +9,6 @@ const Cart = () => {
 
     return (
         <div className='cartDiv'>
-            <h1>Carrinho de compras</h1>
             {cart.map(product => <Product key={product.id} product={product} isRemovable />)}
         </div>
     )

@@ -1,9 +1,11 @@
+import { ADD_CART, SUB_CART } from "./actionType";
+
 export const addToCart = (product) => ({
-    type: "@cart/ADD",
+    type: ADD_CART,
     product
 });
 
 export const removeFromCart = (list) => ({
-    type: "@cart/REMOVE",
+    type: SUB_CART,
     list
 });

@@ -5,10 +5,10 @@ import {
 import { useDispatch } from "react-redux";
 import './styles.css'
 
-const Product = ({ product, isRemovable = false }) => {
+const Product = ({ isRemovable = false, product }) => {
 
   const dispatch = useDispatch();
-  const { id, name, price, image } = product;
+  const { name, price, id, image } = product;
 
   return (
     <div className='card'>
